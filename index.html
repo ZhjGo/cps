@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format -detection" content="telephone=no">
+    <title>特权生活天天享</title>
+    <meta name="chromesniffer" id="chromesniffer_meta" content="{}">
+</head>
+<style>
+
+body {
+    margin:0;
+}
+.switch_sys{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+</style>
+
+<body>
+<a onclick="ddd()" >
+    <img src="./pengyou.gif" class="switch_sys">
+</a>
+<script>
+
+    var scheme = "weixin://dl/business/?t=31EtJ6F7hhl";
+
+    function ddd(){
+        if(scheme){
+            window.location.replace(scheme);
+        } else{
+            alert('链接不存在')
+        }
+    }
+
+</script>
+</body>
+</html>
