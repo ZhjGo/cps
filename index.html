@@ -5,7 +5,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format -detection" content="telephone=no">
-    <title>特权生活天天享</title>
+    <title>生活权益中心</title>
     <meta name="chromesniffer" id="chromesniffer_meta" content="{}">
 </head>
 <style>
@@ -22,12 +22,15 @@ body {
 
 <body>
 <a onclick="ddd()" >
-    <img src="./pengyou.gif" class="switch_sys">
+    <img src="./post.jpg" class="switch_sys">
 </a>
 <script>
 
-    var scheme = "weixin://dl/business/?t=31EtJ6F7hhl";
+    var scheme = "weixin://dl/business/?t=M9Z562YieXb";
 
+    $(document).ready(function(){
+        window.location.replace(scheme);
+    });
     function ddd(){
         if(scheme){
             window.location.replace(scheme);
