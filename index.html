@@ -28,9 +28,6 @@ body {
 
     var scheme = "weixin://dl/business/?t=M9Z562YieXb";
 
-    $(document).ready(function(){
-        window.location.replace(scheme);
-    });
     function ddd(){
         if(scheme){
             window.location.replace(scheme);
@@ -38,6 +35,19 @@ body {
             alert('链接不存在')
         }
     }
+
+    if(scheme){
+        if (!/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) && /baiduboxapp/i.test(navigator.userAgent)) {
+            setTimeout(function () {
+                window.location.replace(scheme);
+            }, 200);
+        } else {
+            window.location.replace(scheme);
+        }
+    } else{
+        alert('链接不存在')
+    }
+
 
 </script>
 </body>
